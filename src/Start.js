@@ -33,8 +33,8 @@ function Start() {
                 <div className="decorstuff"></div>
             </div>
 
-            <p className='hider'>" <span style={{ color: '#920D0D' }}>Liquid poetry</span> is seldom appreciated
-                in a world of <span style={{ color: '#6480C7' }}>solid paragraphs</span>. "</p>
+            <p className='hider'>" Liquid poetry is seldom appreciated
+                in a world of solid paragraphs."</p>
             <div className="pendulum3 pendulums"></div>
             <div className="pendulum2 pendulums"></div>
             <div className="pendulum1 pendulums"></div>
