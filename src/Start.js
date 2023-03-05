@@ -32,10 +32,13 @@ function Start() {
             <div class="decor">
                 <div className="decorstuff"></div>
             </div>
-
+            
+            <p className='hider'>Liquid poetry is seldom appreciated
+                in a world of solid paragraphs.</p>
             <div className="pendulum3 pendulums"></div>
             <div className="pendulum2 pendulums"></div>
             <div className="pendulum1 pendulums"></div>
+            
 
             <img src={interests} alt="prop" className="interests" />
 

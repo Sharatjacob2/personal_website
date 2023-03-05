@@ -344,3 +344,21 @@ p {
 
 .decor{
 width: 1200;}
+
+.hider{
+  position: absolute;
+width: 456px;
+height: 56px;
+left: 408px;
+top: 1553px;
+
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 27.5098px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
