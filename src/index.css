@@ -36,8 +36,11 @@
 
 }
 
-body {
+body,
+html {
   background-color: #212121;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .Circle {
@@ -342,23 +345,24 @@ p {
   background: #6480C7;
 }
 
-.decor{
-width: 1200;}
+.decor {
+  width: 1200;
+}
 
-.hider{
+.hider {
   position: absolute;
-width: 456px;
-height: 56px;
-left: 408px;
-top: 1553px;
+  width: 456px;
+  height: 56px;
+  left: 408px;
+  top: 1553px;
 
-font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 27.5098px;
-line-height: 28px;
-text-align: center;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27.5098px;
+  line-height: 28px;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 
 }

@@ -23,22 +23,22 @@ function Start() {
 
             <div className="Circle interestcircle"></div>
             <div className="subheadsquare"></div>
-            <p class="heading">INTERESTS</p>
-            <p class="subheading">what I'm into, lol</p>
+            <p className="heading">INTERESTS</p>
+            <p className="subheading">what I'm into, lol</p>
             <img src={Vector2} alt="prop" className="Vectors" style={{ top: '476.22px' }} />
             <img src={Vector3} alt="prop" className="Vectors" style={{ top: '456.22px' }} />
             <img src={Vector1} alt="prop" className="Vectors" style={{ top: '436.22px' }} />
 
-            <div class="decor">
+            <div className="decor">
                 <div className="decorstuff"></div>
             </div>
-            
-            <p className='hider'>Liquid poetry is seldom appreciated
-                in a world of solid paragraphs.</p>
+
+            <p className='hider'>" <span style={{ color: '#920D0D' }}>Liquid poetry</span> is seldom appreciated
+                in a world of <span style={{ color: '#6480C7' }}>solid paragraphs</span>. "</p>
             <div className="pendulum3 pendulums"></div>
             <div className="pendulum2 pendulums"></div>
             <div className="pendulum1 pendulums"></div>
-            
+
 
             <img src={interests} alt="prop" className="interests" />
 
@@ -80,6 +80,9 @@ let lastScrollY = window.scrollY;
 
 function handleScroll() {
     const scrollY = window.scrollY;
+    console.log(box);
+    if(box != null && scrollY !=null && lastScrollY != null){
+
     if (scrollY > lastScrollY) {
         box.style.transform = `translateX(-50px)`;
         circle1.style.transform = 'rotate(-60deg) translateX(10px) translateY(450px) ';
@@ -99,6 +102,9 @@ function handleScroll() {
     // }
     lastScrollY = scrollY;
 }
+}
+
+
 
 window.addEventListener('scroll', handleScroll);
 
