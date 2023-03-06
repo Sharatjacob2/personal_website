@@ -15,10 +15,7 @@ function Start() {
             <div className="Circle Circle1"></div>
             <div className="Circle Circle2"></div>
             <img src={require("./Sharat.png")} alt="Sharat" className="StarterImage" />
-            <p className="Description">I am a 21-year-old college student pursuing my interests in the fields of UI/UX,
-                content writing, software development, and machine learning,
-                enthusiastic about building
-                products that make a world of difference.</p>
+
 
 
             <div className="Circle interestcircle"></div>
@@ -32,9 +29,13 @@ function Start() {
             <div className="decor">
                 <div className="decorstuff"></div>
             </div>
+            <p className="Description">I am a 21-year-old college student pursuing my interests in the fields of UI/UX,
+                content writing, software development, and machine learning,
+                enthusiastic about building
+                products that make a world of difference.</p>
 
-            <p className='hider'>" Liquid poetry is seldom appreciated
-                in a world of solid paragraphs."</p>
+            <p className='hider'>Liquid poetry is seldom appreciated
+                in a world of solid paragraphs.</p>
             <div className="pendulum3 pendulums"></div>
             <div className="pendulum2 pendulums"></div>
             <div className="pendulum1 pendulums"></div>
@@ -49,7 +50,7 @@ function Start() {
             <div className='websiteholder'></div>
             <div className='websitelinkholder'></div>
             <p className='websiteintro'>For your perusal, my collection of short stories and blog posts over the years</p>
-            <a className='websitelink' href="https://www.sharatjacob2.github.io">sharatjacob2.github.io</a>
+            <a className='websitelink' href="https://sharatjacob2.github.io">sharatjacob2.github.io</a>
 
 
 
@@ -81,27 +82,30 @@ let lastScrollY = window.scrollY;
 function handleScroll() {
     const scrollY = window.scrollY;
     console.log(box);
-    if(box != null && scrollY !=null && lastScrollY != null){
+    if (box != null && scrollY != null && lastScrollY != null) {
 
-    if (scrollY > lastScrollY) {
-        box.style.transform = `translateX(-50px)`;
-        circle1.style.transform = 'rotate(-60deg) translateX(10px) translateY(450px) ';
-        circle2.style.transform = 'rotate(-60deg) translateX(310px) translateY(500px) ';
-        circle3.style.transform = 'rotate(-60deg) translateX(560px) translateY(550px) ';
-        circle4.style.offsetDistance = '100%';
+        if (scrollY > lastScrollY) {
+            box.style.transform = `translateX(-50px)`;
+            circle1.style.transform = 'rotate(-60deg) translateX(10px) translateY(450px) ';
+            circle2.style.transform = 'rotate(-60deg) translateX(310px) translateY(500px) ';
+            circle3.style.transform = 'rotate(-60deg) translateX(560px) translateY(550px) ';
+            circle4.style.offsetDistance = '100%';
 
-    } else if (scrollY < lastScrollY) {
-        circle1.style.transform = 'rotate(60deg) translateX(-250px) translateY(-250px) ';
-        circle2.style.transform = 'rotate(60deg) translateX(-250px) translateY(-250px) ';
-        circle3.style.transform = 'rotate(60deg) translateX(-250px) translateY(-250px) ';
-        circle4.style.offsetDistance = '0%';
-        box.style.transform = `translateX(50px)`;
+        } else if (scrollY < lastScrollY) {
+            circle1.style.transform = 'rotate(60deg) translateX(-250px) translateY(-250px) ';
+            circle2.style.transform = 'rotate(60deg) translateX(-250px) translateY(-250px) ';
+            circle3.style.transform = 'rotate(60deg) translateX(-250px) translateY(-250px) ';
+            circle4.style.offsetDistance = '0%';
+            box.style.transform = `translateX(50px)`;
+        }
+        // if ((isElementInViewport(teller))) {
+        //     circle1.style.transform = 'rotate(-60deg) translateX(10px) translateY(450px) scale(0.5)';
+        // }
+        // else {
+        //     circle1.style.transform = 'rotate(60deg) translateX(-250px) translateY(-250px) scale(2)';
+        // }
+        lastScrollY = scrollY;
     }
-    // if ((isElementInViewport(teller))) {
-    //     circle1.style.transform = 'translateY(350px) scale(0.5)';
-    // }
-    lastScrollY = scrollY;
-}
 }
 
 
@@ -111,10 +115,10 @@ window.addEventListener('scroll', handleScroll);
 // function isElementInViewport(el) {
 //     const rect = el.getBoundingClientRect();
 //     return (
-//         rect.top >= 0 &&
-//         rect.left >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//         rect.top >= 0
+//         // rect.left >= 0 &&
+//         // rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         // rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 //     );
 // }
 

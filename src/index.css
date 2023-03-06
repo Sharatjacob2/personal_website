@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&display=swap');
 
+
+:root{
+  --blue:#6480C7;
+  --red:#b30000;
+  --white:#f3f3f3;
+  --black:#212121;
+}
 ::-webkit-scrollbar {
   width: 19px;
 }
@@ -12,13 +19,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #6480C7;
+  background: var(--blue);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: var(--red);
 }
 
 .Description {
@@ -31,14 +38,14 @@
   font-size: 38.1254px;
   line-height: 38px;
   text-align: right;
-  color: #FFFFFF;
+  color: var(--white);
   text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.25);
 
 }
 
 body,
 html {
-  background-color: #212121;
+  background-color: var(--black);
   width: 100vw;
   overflow-x: hidden;
 }
@@ -53,7 +60,7 @@ html {
   height: 432.09px;
   left: 124.97px;
   top: 40.24px;
-  background: #920D0D;
+  background: var(--red);
   box-shadow: -40px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -62,7 +69,7 @@ html {
   height: 366.43px;
   left: 751.92px;
   top: 154.17px;
-  background: #6480C7;
+  background: var(--blue);
   box-shadow: -40px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -83,13 +90,6 @@ html {
   left: 0px;
 }
 
-.Circle3 {
-  width: 230.87px;
-  height: 230.87px;
-  left: 974.32px;
-  top: 728.62px;
-  background: #920D0D;
-}
 
 .interests {
   position: absolute;
@@ -108,7 +108,7 @@ html {
   left: 974.31px;
   top: 648.62px;
 
-  background: #920D0D;
+  background: var(--red);
   box-shadow: -40px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -121,7 +121,7 @@ html {
   font-size: 72.3604px;
   line-height: 72px;
 
-  color: #FFFFFF;
+  color: var(--white);
 
   text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -141,7 +141,7 @@ p {
   font-size: 72.3604px;
   line-height: 72px;
 
-  color: #FFFFFF;
+  color: var(--white);
 
   text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -156,7 +156,7 @@ p {
   line-height: 38px;
   text-align: right;
 
-  color: #FFFFFF;
+  color: var(--white);
 
   text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -167,7 +167,7 @@ p {
   height: 45px;
   left: 850.01px;
   top: 790px;
-  background: #6480C7;
+  background: var(--blue);
   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -178,7 +178,7 @@ p {
   border-radius: 50%;
   box-shadow: 0px 28px 0px rgba(0, 0, 0, 0.25);
   transform: translate(-50%, -50%);
-  transition: transform 4s ease-out;
+  transition: transform 3s ease-out;
   transform-origin: center;
 }
 
@@ -186,19 +186,19 @@ p {
 .pendulum1 {
   left: -179px;
   top: 1200px;
-  background-color: #6480C7;
+  background-color: var(--blue);
 }
 
 .pendulum2 {
   left: -179px;
   top: 1430px;
-  background-color: #FFFFFF;
+  background-color: var(--white);
 }
 
 .pendulum3 {
-  left: -139px;
+  left: -179px;
   top: 1630px;
-  background-color: #920D0D;
+  background-color: var(--red);
 }
 
 
@@ -213,7 +213,7 @@ p {
   box-shadow: 0px 28px 0px rgba(0, 0, 0, 0.25);
   width: 310px;
   height: 310px;
-  background: #920D0D;
+  background: var(--red);
   top: 496px;
   overflow-x: hidden;
   position: absolute;
@@ -234,7 +234,7 @@ p {
   left: 184px;
   top: 1952px;
 
-  background: #6480C7;
+  background: var(--blue);
   box-shadow: 14px 11px 0px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
 }
@@ -245,7 +245,7 @@ p {
   height: 99px;
   left: 321px;
   top: 2213px;
-  background: #920D0D;
+  background: var(--red);
   box-shadow: 14px 11px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
@@ -265,7 +265,7 @@ p {
 
   text-align: center;
 
-  color: #FFFFFF;
+  color: var(--white);
 
   text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -285,7 +285,7 @@ p {
   line-height: 55px;
   text-align: center;
 
-  color: #FFFFFF;
+  color: var(--white);
 
   text-shadow: 5px 3px 0px rgba(0, 0, 0, 0.25);
 }
@@ -313,7 +313,7 @@ p {
   text-align: center;
   text-transform: uppercase;
 
-  color: #FAFAFA;
+  color: var(--white);
 
   text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -324,7 +324,7 @@ p {
   left: 401px;
   top: 62px;
 
-  background: #920D0D;
+  background: var(--red);
 }
 
 .finalelp2 {
@@ -333,7 +333,7 @@ p {
   left: 50px;
   top: 62px;
 
-  background: #FFFFFF;
+  background: var(--white)
 }
 
 .finalelp3 {
@@ -342,7 +342,7 @@ p {
   left: 747px;
   top: 62px;
 
-  background: #6480C7;
+  background: var(--blue);
 }
 
 .decor {
@@ -363,6 +363,6 @@ p {
   line-height: 28px;
   text-align: center;
 
-  color: #FFFFFF;
+  color: var(--white);
 
 }
